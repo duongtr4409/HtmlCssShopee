@@ -19,6 +19,10 @@
     position: relative;
 }
 
+.header__navbar--has-qr:hover .header__qr{
+    display: block;
+}
+
 .header__navbar-item, .header__navbar-item-link {
     display: inline-block;
     font-size: 1.4rem;
@@ -55,7 +59,7 @@
 
 .header__navbar-icon-link:hover {
     color: rgba(255, 255, 255, 0.8);
-    cursor: pointer;;
+    cursor: pointer;
 }
 
 .header__navbar-title {
@@ -67,4 +71,41 @@
 .header__navbar-icon-link {
     display: inline-flex;
     align-items: center;
+}
+
+/* header QR CODE */
+.header__qr {
+    position: absolute;
+    top: 100%;
+    left: calc(50% - 90px);
+    width: 180px;
+    background-color: var(--white-color);
+    padding: 8px;
+    margin-top: 8px;
+    display: none;
+}
+
+.header__qr::before {
+    position: absolute;
+    display: block;
+    content: "";
+    left: 0;
+    top: -8px;
+    height: 10%;
+    width: 100%;
+}
+
+.header__qrimg {
+    width: 100%;
+}
+
+.header__qrapps {
+    padding: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header__qr-download-img {
+    height: 16px;
 }
