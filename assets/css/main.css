@@ -50,9 +50,21 @@
 .header__navbar-icon-link {
     color: var(--white-color);
     text-decoration: none;
+    margin: 0 4px
 }
 
 .header__navbar-icon-link:hover {
     color: rgba(255, 255, 255, 0.8);
-    cursor: pointer;
+    cursor: pointer;;
+}
+
+.header__navbar-title {
+    cursor: text;
+    color: var(--white-color);
+}
+
+.header__navbar-item 
+.header__navbar-icon-link {
+    display: inline-flex;
+    align-items: center;
 }
