@@ -270,6 +270,7 @@
     border-radius: 4px;
     background-color: var(--white-color);
     overflow: hidden;
+    display: none;
 }
 
 .auth-form__container {
