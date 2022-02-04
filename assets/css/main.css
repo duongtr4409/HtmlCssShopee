@@ -460,7 +460,8 @@
     border-radius: 2px;
     box-shadow: 0 1px 3.125rem 0 rgba(0, 0, 0, 0.2);
     display: none;
-    
+    cursor: default;
+
     --FadeIn-Opacity-From: 0.4;
     --FadeIn-Opacity-To: 1;
     animation: FadeIn ease-in 0.2s;
@@ -475,6 +476,7 @@
     border-style: solid;
     border-width: 20px 30px;
     border-color: transparent transparent var(--white-color) transparent;
+    cursor: pointer;
 }
 
 .header__car-list--no-cart {
