@@ -79,7 +79,7 @@ html {
     margin: auto;
     z-index: 1;
 
-    --Growth-Transform-From: 0;
+    --Growth-Transform-From: 0.7;
     --Growth-Transform-To: 1;
     transform-origin: calc(50%) calc(50%);
     animation: Growth linear 0.1s;
