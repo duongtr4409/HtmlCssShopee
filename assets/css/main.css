@@ -615,4 +615,5 @@
     font-size: 1.4rem;
     color: var(--text-color);
     line-height: 38px;
+    display: block;
 }
