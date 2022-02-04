@@ -9,6 +9,9 @@ const modal = $('.modal');      // base modal
 const registryForm = $('#Registry-Form');   // registry form modal
 const loginForm = $('#Login-Form');     // login form modal
 
+const searchHistory = $('.header__search-history');    // search history
+const searchInput = $('input.header__search-input');    // search input
+
 const app = {
 
     isOpenModalRegistry : false,
@@ -27,8 +30,28 @@ const app = {
             // handler event when click headerLogin
         if(headerLogin){
             headerLogin.onclick = function(event){
+                event.preventDefault();
                 app.isOpenModalLogin = !app.isOpenModalLogin;
                 app.openModal(loginForm);
+            }
+        }
+
+            // handler event when focus searchInput
+        if(searchInput){
+            searchInput.onfocus = function(event){
+                if(searchHistory) searchHistory.style.display = 'block';
+            }
+        }
+
+            // handler event when click on searchHistory
+        if(searchHistory){
+            searchHistory.onclick = function(event){
+                if(event.target.closest('.header__search-history-item')){
+                    if(searchInput) searchInput.value = event.target.innerText;
+                }else{
+                    if(searchInput) searchInput.value = '';
+                }
+                searchHistory.style.display = 'none';
             }
         }
 
