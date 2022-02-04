@@ -9,8 +9,14 @@ const modal = $('.modal');      // base modal
 const registryForm = $('#Registry-Form');   // registry form modal
 const loginForm = $('#Login-Form');     // login form modal
 
+    //  search history
 const searchHistory = $('.header__search-history');    // search history
 const searchInput = $('input.header__search-input');    // search input
+
+    // search selection
+const searchSelection = $('.header__search-select');     // searchSelection
+const searchLabel = $('.header__search-label');     // searchLabel
+const searchOptions = $('.header__search-option');   // searchOptions
 
 const app = {
 
@@ -52,6 +58,22 @@ const app = {
                     if(searchInput) searchInput.value = '';
                 }
                 searchHistory.style.display = 'none';
+            }
+        }
+
+            // handler event when click search options
+        if(searchOptions){
+            searchOptions.onclick = function(event){
+                console.dir(event.target.closest('.header__search-option-item span'));
+                if(event.target.closest('.header__search-option-item span')){
+                    if(searchLabel) searchLabel.innerText = event.target.innerText;
+                    if(event.target.parentElement) {
+                        Array.from(searchSelection.querySelectorAll('.header__search-option-item')).forEach(ele => {
+                            ele.classList.remove('header__search-option-item--active');
+                        });
+                        event.target.parentElement.classList.add('header__search-option-item--active');
+                    }
+                }
             }
         }
 
