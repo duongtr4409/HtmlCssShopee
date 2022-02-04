@@ -460,6 +460,10 @@
     border-radius: 2px;
     box-shadow: 0 1px 3.125rem 0 rgba(0, 0, 0, 0.2);
     display: none;
+    
+    --FadeIn-Opacity-From: 0.4;
+    --FadeIn-Opacity-To: 1;
+    animation: FadeIn ease-in 0.2s;
 }
 
 .header__cart-list::after{
