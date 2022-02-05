@@ -976,15 +976,15 @@
     display: block;
 
     position: relative;
-    /* top: 0;
+    top: 0;
     right: 0;
-    transition: right ease-in 0.2s; */
+    transition: right ease-in 0.2s;
 }
 
-/* .category-item__link:hover {
+.category-item__link:hover {
     color: var(--primari-color);
     right: -4px
-} */
+}
 
     /*  */
 
