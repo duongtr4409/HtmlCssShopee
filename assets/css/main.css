@@ -919,6 +919,10 @@
     background-color: #F5F5F5;
 }
 
+.app__content {
+    padding-top: 24px;
+}
+
     /* Category */
 .category {
     background-color: var(--white-color);
@@ -988,4 +992,82 @@
 
     /*  */
 
+    /* Home Filter */
+.home-filter {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.04);
+    padding: 12px 22px;
+    border-radius: 2px;
+}
+
+.home-filter__label {
+    font-size: 1.4rem;
+    color: #555;
+    margin-right: 16px;
+}
+
+.home-filter__label-btn {
+    min-width: 90px;
+    background-color: var(--white-color);
+    margin-right: 12px;
+}
+
+.home-filter__page {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.home-filter__page-num {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-right: 22px;
+}
+
+.home-filter__page-current {
+    color: var(--primari-color);
+}
+
+.home-filter__page-total {
+
+}
+
+.home-filter__page-control {
+    width: 72px;
+    height: 36px;
+    border-radius: 2px;
+    overflow: hidden;
+    display: flex;
+}
+
+.home-filter__page-btn {
+    background-color: var(--white-color);
+    flex: 1;
+    display: flex;
+    text-decoration: none;
+}
+
+.home-filter__page-btn:first-child {
+    border-right: 1px solid #EEE;
+}
+
+.home-filter__page-btn-icon {
+    margin: auto;
+    font-size: 1.4rem;
+    color: #555;
+}
+
+.home-filter__page-btn--disable {
+    background-color: #F9F9F9;
+    cursor: default;
+}
+
+.home-filter__page-btn--disable .home-filter__page-btn-icon {
+    color: #CCC;
+}
+
+
+    /*  */
 /*  */
