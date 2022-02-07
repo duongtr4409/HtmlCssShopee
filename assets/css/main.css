@@ -1295,6 +1295,12 @@ i.home-product-item__like-icon-fill  {
     position: relative;
     bottom: -4px;
 }
+    /*  */
 
 
+    /* Home Product Pagination */
+.home-product__pagination {
+    margin: 48px 0 32px;
+}
+    /*  */
 /*  */

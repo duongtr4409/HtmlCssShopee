@@ -228,6 +228,55 @@ html {
 .select-input-link:hover {
     color: var(--primari-color);
 }
-
 /*  */
 
+
+/* Pagination */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.pagination-item {
+    margin: 0 12px;
+}
+
+.pagination-item--active .pagination-item__link {
+    background-color: var(--primari-color);
+    color: var(--white-color);
+}
+
+.pagination-item__link {
+    --line-height: 30px;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #939393;
+    display: block;
+    min-width: 40px;
+    height: var(--line-height);
+    line-height: var(--line-height);
+    text-align: center;
+    border-radius: 2px;
+
+    /* position: relative;
+    top: 0; */
+    transform: translateY(0);
+    transition: transform ease-in 0.05s;
+    will-change: transform;
+}
+
+.pagination-item__link:hover {
+    filter: brightness(90%);
+    /* top: -1px */
+    transform: translateY(-1px);
+}
+
+.pagination-item__link-icon {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+/*  */
