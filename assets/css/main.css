@@ -183,6 +183,7 @@
 /* header QR CODE */
 .header__qr {
     position: absolute;
+    z-index: 1;
     top: 100%;
     left: calc(50% - 90px);
     width: 180px;
@@ -193,6 +194,7 @@
     will-change: transform, opacity;
     transform-origin: calc(50%) top;
     animation: HeaderQRCodeGrowth ease 0.25s;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .header__qr::after{
