@@ -676,6 +676,20 @@
     font-weight: 500;
     color: var(--text-color);
     margin: 0;
+    flex: 1;
+    text-align: left;
+
+    
+    display: block;
+    /* text-overflow: ellipsis;
+    white-space: nowrap; */
+
+    line-height: 1.6rem;
+    max-height: 1.6rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
 }
 
 .header__cart-item-price-wrap {
