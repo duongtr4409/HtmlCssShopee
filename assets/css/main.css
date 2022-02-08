@@ -183,6 +183,7 @@
 /* header QR CODE */
 .header__qr {
     position: absolute;
+    z-index: 1;
     top: 100%;
     left: calc(50% - 90px);
     width: 180px;
@@ -193,6 +194,7 @@
     will-change: transform, opacity;
     transform-origin: calc(50%) top;
     animation: HeaderQRCodeGrowth ease 0.25s;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .header__qr::after{
@@ -577,6 +579,7 @@
 
 .header__cart-list {
     position: absolute;
+    z-index: 1;
     top: calc(100% + 11px);
     right: -32px;
     background-color: var(--white-color);
@@ -637,6 +640,8 @@
 .header__cart-list-item {
     padding-left: 0;
     list-style: none;
+    max-height: 56vh;
+    overflow-y: auto;
 }
 
 .header__cart-item {
@@ -671,6 +676,20 @@
     font-weight: 500;
     color: var(--text-color);
     margin: 0;
+    flex: 1;
+    text-align: left;
+
+    
+    display: block;
+    /* text-overflow: ellipsis;
+    white-space: nowrap; */
+
+    line-height: 1.6rem;
+    max-height: 1.6rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
 }
 
 .header__cart-item-price-wrap {
@@ -867,6 +886,7 @@
 
 .header__search-history {
     position: absolute;
+    z-index: 1;
     top: calc(100% + 4px);
     left: 0;
     width: calc(100% - 16px);
@@ -1084,8 +1104,7 @@
     will-change: transform;
     background-color: var(--white-color);
     margin-top: 10px;
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
+    border-radius: 2px;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -1098,7 +1117,9 @@
     padding-top: 100%;
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;
+    background-position: top center;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
 }
 
 .home-product-item__name {
@@ -1243,6 +1264,7 @@ i.home-product-item__like-icon-fill  {
     background-color: rgba(255, 216, 64, 0.95);
     text-align: center;
     padding: 4px 4px;
+    border-top-right-radius: 2px;
 }
 
 .home-product-item__sale-off::after {
@@ -1274,6 +1296,12 @@ i.home-product-item__like-icon-fill  {
     position: relative;
     bottom: -4px;
 }
+    /*  */
 
 
+    /* Home Product Pagination */
+.home-product__pagination {
+    margin: 48px 0 32px;
+}
+    /*  */
 /*  */
